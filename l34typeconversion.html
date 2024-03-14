@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Type Conversion</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+
+		//String (Character array)
+		let val;
+
+		val = "aung aung";
+
+		console.log(val); // aung aung
+		console.log(typeof val); // string
+		console.log(val.length); // array method but can also use in string as well start count from 1 not 0
+
+		// Number to String
+
+		val = "20";
+		val = '20';
+		val = `20`;
+		val = String(20);
+
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+			
+// Boolean to String
+
+		val = true;
+		val = String(val);
+
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+// Date to String
+
+		val = "new Date ()";
+		val = String(new Date());
+
+		console.log(val); // Mon Jan 08 2024 20:12:27 GMT+0630 (Myanmar Time)
+		console.log(typeof val); // Object
+		console.log(val.length); // 48
+
+// Array to String
+
+		val = [1,2,3,4,5]; //
+		val = String([1,2,3,4,5])
+
+		console.log(val);
+		console.log(typeof val); 
+		console.log(val.length);
+
+
+		// -----------------------------------------
+
+// String to Number
+		val = "20";
+		// val = Number(val);
+		val = +val;
+		val = +"20"
+
+		console.log(val); // 20
+		console.log(typeof val); 
+		console.log(val.length);
+
+		// val = Number(prompt("Enter First Number"));
+		// val = +prompt("Enter First Number");
+
+		// console.log(val); // 20
+		// console.log(typeof val); 
+		// console.log(val.length);
+
+		val = Number("aung aung"); //NaN = Not a Number
+		val = +"aung aung"; // NaN = Not a Number
+		val = Number([1,2,3,4,5]); // NaN = Not a Number
+
+		console.log(val); 
+		console.log(typeof val); 
+		console.log(val.length);
+
+		val = 10 + "33.34"; //1033.34
+		val = 10 + +"33.34"; //43.34
+
+		console.log(val);
+		console.log(typeof val); 
+		console.log(val.length);
+
+		val = 123.456789;
+
+		console.log(val);
+		console.log(val.toFixed(3)); // Decimal cut 3 places 
+		console.log(typeof val); 
+		console.log(val.length);
+
+		val = "50.789";
+		// val = Number(val); //50.789
+		// val = parseInt(val); //50 ကိန်းပြည့်ယူ
+		val = parseFloat(val); //50.789
+
+		console.log(val);
+		console.log(val.toFixed(2)); // Decimal cut 2 places 
+		console.log(typeof val); 
+		console.log(val.length);
+
+		// Boolean to Number
+
+		val = true;
+		val = Number(val);
+		val = +false;
+
+		console.log(val);
+		console.log(val.toFixed(2)); // 1.00
+		console.log(typeof val); 
+		console.log(val.length);
+
+// -----------------------------------------
+		// String to Array
+
+		val = "Honey Nway Oo";
+		val = Array.from(val);
+
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+// Note: Number, boolean object can't convert into array
+
+		// val = 50;
+		// val = true;
+		// val = new Date();
+		val = {
+			music: "rock",
+			sport: "basketball"
+		};
+
+		val = Array.from(val);
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+
+		</script>
+	</body>
+</html>

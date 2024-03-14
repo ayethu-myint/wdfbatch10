@@ -1,0 +1,99 @@
+=> github
+
+= One times
+=> SSH (Secure Shell) until change new computer, change new operating system
+after git install
+git
+git --version
+
+
+git config --global user.name "ayethu"
+git config user.name
+
+git config --global user.email "ayethu.myint2014@gmail.com"
+git config user.email
+
+=> SSH (Secure Shell)
+ssh-keygen
+
+ssh -T git@github.com
+
+
+=> git hub code
+
+git init
+git remote add origin "git@github.com:ayethu-myint/wvlprojecttest.git"
+
+
+(Repeating as to you many times)
+git status
+git add -A
+git status
+git commit -m "my first project"
+git push -u origin master
+
+
+git status
+git add *
+git status
+git commit -m "title modified 12/march/2024/12:50"
+git push -u origin master
+
+
+=>To download
+under code, download zip file
+
+
+=> To download (Only files under main)
+git clone "repoistory link"
+
+=> To downloadd
+git init
+git remote add origin "Repository link"
+git status
+git pull origin master/main
+
+
+
+
+
+
+
+index.html
+html
+header
+header
+body
+	header
+		nav
+		banner
+	header
+body
+html
+
+
+firstproject nav banner 1/feb/2024 4pm
+
+
+index.html
+html
+header
+header
+body
+	header
+		nav
+		banner
+	header
+	footer
+		copyright
+	footer
+body
+html
+
+
+footer 2/feb/2024 12pm
+
+
+
+
+

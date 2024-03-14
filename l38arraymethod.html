@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array Method</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+
+			let arrcolors = ["red","green","blue","white","black","pink"];
+
+			console.log(arrcolors);
+			console.log(arrcolors.length); 
+			console.log(arrcolors[3]);
+
+			// indexOf(value)
+
+			console.log(arrcolors.indexOf("black"));
+			console.log(arrcolors.indexOf("Black")); // if the value is not in the array, it will show -1 because 0 is still in the available array
+			console.log(arrcolors.indexOf("orange"));
+
+			// Array.isArray(array)
+
+			const name = "aung aung";
+
+			console.log(Array.isArray(name)); // false
+			console.log(Array.isArray(arrcolors)); // true
+
+			//join('delimitor')
+			console.log(String(arrcolors)); //String method
+			console.log(arrcolors.toString());// concat method
+			console.log(arrcolors.join());
+			console.log(arrcolors.join(""));
+			console.log(arrcolors.join(" "));
+			console.log(arrcolors.join("-"));
+
+			const candys = ['red','green','blue','white','black']
+			candys[5] = "pink";
+			candys[1] = "skyblue";
+
+			console.log(candys);
+			console.log(candys.length);
+
+			//push(value) : Note - Add new value to array (addon to the end)
+
+			candys.push("orange");
+			candys.push("gold");
+			candys.push("violet","gray");
+
+			console.log(candys);
+			console.log(candys.length);
+
+			// unshift (value) Note:: Add new value to array (add on the front);
+
+			candys.unshift("tomato");
+			candys.unshift("green");
+			candys.unshift("silver","steelblue");
+
+			console.log(candys);
+			console.log(candys.length);
+
+			//shift() Note:: Remove value & index number to array (front)
+
+			candys.shift();
+			candys.shift();
+			console.log(candys);
+			console.log(candys.length);
+
+			// pop() Note:: Remove value & index number to array (back)
+
+			candys.pop();
+			candys.pop();
+
+			console.log(candys);
+			console.log(candys.length);
+
+			// delete (Remove only value not index number)
+
+			delete candys[1];
+			delete candys[5];
+
+			console.log(candys); 
+			console.log(candys.length);
+
+			
+			// splice(index,length);
+			const paints = candys.splice(2,3);
+			console.log(paints);
+
+			// concat ()
+			const arr1 = ["aung aung",'mg mg','tun tun', 'kyaw kyaw'];
+			const arr2 = ['su su','nu nu','yu yu','lue lue','noe noe'];
+			const arr3 = [10,20];
+
+			console.log(arr1+arr2);
+			console.log(arr1.concat(arr2));
+			console.log(arr3.concat(arr2));
+
+			// sort () Note: Arrange A to Z
+
+			const combinearrs = arr1.concat(arr2);
+
+			console.log(combinearrs);
+			console.log(combinearrs[0]);
+			console.log(combinearrs[4]);
+
+			console.log(combinearrs.sort());
+			console.log(combinearrs[0]);
+			console.log(combinearrs[4]);
+
+			// reverse () Note: reversing the arrangement but it works with the print out console, does not need to give to variable.
+
+			console.log(combinearrs.reverse());
+
+			const arrnumbers = [200,700,300,100,30,50,150,11,10,6,8,7,9,5,600,400,250,360];
+
+			console.log(arrnumbers);
+			console.log(arrnumbers.sort());
+			console.log(arrnumbers.reverse());
+
+
+			// to be continue (after Function chapter)
+
+			// callback function
+			console.log(arrnumbers.sort(function(a,b){
+				// return a-b;
+				return b-a;
+			}));
+
+
+		</script>
+	</body>
+</html>
